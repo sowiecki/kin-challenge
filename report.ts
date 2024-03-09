@@ -6,9 +6,9 @@ enum Result {
   ERR = 'ERR'
 }
 
-interface PolicyReport {
+export interface PolicyReport {
   policyNumber: string;
-  result: Result | null;
+  result: Result | true;
 }
 
 /**
@@ -23,11 +23,11 @@ const reportScannedPolicyNumbers = (policyNumbers: string[]) => {
     }
 
     const containsIllegibleChars = policyNumber.includes('?');
-    function genResult(): Result | null {
+    function genResult(): Result | true {
       if (containsIllegibleChars) {
         return Result['ILL'];
       } else if (checksum(parseInt(policyNumber, 10))) {
-        return null;
+        return true;
       } else {
         // Contains all valid digits, but did not pass checksum
         // Some digits may have been misread by OCR

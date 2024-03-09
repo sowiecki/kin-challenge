@@ -20,7 +20,3 @@ npm run test
 # Notes
 - I highly recommend enabling rendering of whitespaces (in VSCode, `ctrl` + `,` to open Settings, select `all` under "Render Whitespace")
 - Functions are written as individual utility methods, similar to how I'd implement them into a larger service. If I were to implement this as a packaged library, I'd expose the default exports as modules.
-
-
-# TODO
-- Add linting

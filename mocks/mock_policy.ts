@@ -3,7 +3,7 @@ import { CHARS_PER_POLICY } from '../constants';
 
 export const genMockPolicyNumber = () => parseInt(new Array(CHARS_PER_POLICY)
   .fill(0)
-  .map(() => Math.floor(Math.random() * 9))
+  .map(() => Math.floor(Math.random() * 10))
   .join(''), 10);
 
 const EMPTY_LINE = ' '.repeat(27);
