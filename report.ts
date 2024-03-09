@@ -3,6 +3,7 @@ import { CHARS_PER_POLICY } from './constants';
 
 /**
  * Outputs a report of each parsed policy number
+ * @return {string} report of policy numbers and their associated checksum results
  */
 const reportScannedPolicyNumbers = (policyNumbers: number[]) => {
   const reportedNumbers: string[] = [];

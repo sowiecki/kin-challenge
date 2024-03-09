@@ -32,3 +32,5 @@ if (process.env.npm_config_verbose_mocks) {
   console.log(mockFile);
 }
 console.log(reportScannedPolicyNumbers(parseOCRFile(mockFile)));
+
+export default parseOCRFile;

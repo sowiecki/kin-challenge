@@ -2,6 +2,7 @@ import { SCANNED_NUMBERS_MAP } from '../constants';
 
 /**
  * Takes a single segmented digit of 3 lines and outputs its matching number
+ * @return {number} index for SCANNED_NUMBERS_MAP of matching digit
  */
 const mapDigit = (entryLines: string[]) => (_: string, index: number) => {
   const lineIndex = index * 3;

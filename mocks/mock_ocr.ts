@@ -6,8 +6,8 @@ import { SCANNED_NUMBERS_MAP } from '../constants';
  */
 
 // Combines individual OCR digits into the same "readable line" (actually 3 lines)
-export const combineDigits = (...digits: any) => digits
-  .reduce((acc: string, currentVal: string) => ([
+export const combineDigits = (...digits: string[][]) => digits
+  .reduce((acc: string[], currentVal: string[]) => ([
     `${acc[0]}${currentVal[0]}`,
     `${acc[1]}${currentVal[1]}`,
     `${acc[2]}${currentVal[2]}`,

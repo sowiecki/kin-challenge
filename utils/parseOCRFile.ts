@@ -2,9 +2,9 @@ import transformOCRToNumber from './transformOCRToNumber';
 
 
 /**
- * Each policy number is 108 characters, however the last 27 characters are blank space,
- * therefore this runs the first 81 characters through transformOCRToNumber and ignore last 27
- * @return string[]
+ * @param {string} scannedFile - sets of policy numbers comprised of pipe character segments.
+ *  Each policy number is comprised of 4 lines; 3 lines each 27-characters long, and 1 blank line.
+ * @return {number[]} array of parsed policy numbers
  */
 const parseOCRFile = (scannedFile: string) => {
   const splitScannedFile = scannedFile.split('\n');

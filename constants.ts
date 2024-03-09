@@ -1,11 +1,11 @@
 // For reference, as apparently formatted in the challenge
 // Added a 0 to abide by "range 0-9" rule
-const BASE_TEST_SEQUENCE =
-`
- _   _  _     _  _ _  _  _
-| || _| _||_||_ |_  ||_||_|
-|_|||_  _|  | _||_| ||_| _|
-`;
+// const BASE_TEST_SEQUENCE =
+// `
+//  _   _  _     _  _ _  _  _
+// | || _| _||_||_ |_  ||_||_|
+// |_|||_  _|  | _||_| ||_| _|
+// `;
 
 interface ScannedNumber {
   [key: string]: string[]
