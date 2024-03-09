@@ -13,4 +13,4 @@ console.log('\n')
 console.log('↓ That same policy number, parsed from OCR to number ↓');
 console.log(transformOCRToNumber(mockOCRPolicyNumber));
 
-console.log('Run `npm run test` to test more numbers!')
+console.log('Run `npm run test` to test more numbers!');
