@@ -9,22 +9,25 @@ const mapDigit = (entryLines: string[]) => (_: string, index: number) => {
   const nextLineIndex = lineIndex + 3;
 
   const parsedSegments = [
-    entryLines[0].slice(lineIndex, nextLineIndex),
-    entryLines[1].slice(lineIndex, nextLineIndex),
-    entryLines[2].slice(lineIndex, nextLineIndex),
+    entryLines[0]?.slice(lineIndex, nextLineIndex),
+    entryLines[1]?.slice(lineIndex, nextLineIndex),
+    entryLines[2]?.slice(lineIndex, nextLineIndex),
   ];
-
-  const foundIndex = Object.values(SCANNED_NUMBERS_MAP).findIndex((array: string[]) => JSON.stringify(array) === JSON.stringify(parsedSegments));
-
-  return foundIndex;
+  const stringifiedParsedSegments = JSON.stringify(parsedSegments);
+  const foundIndex = Object.values(SCANNED_NUMBERS_MAP).findIndex((array: string[]) => JSON.stringify(array) === stringifiedParsedSegments);
+console.log(foundIndex)
+  return foundIndex === -1 ? '?' : foundIndex;
 };
 
-
+/**
+ * @param {string[]} entry
+ * @return {string[]}
+ */
 const transformOCRToNumber = (entry: string[]) => {
   const entryLines = entry;
   const digits = new Array(9).fill(null).map(mapDigit(entryLines)).join('');
 
-  return parseInt(digits, 10);
+  return digits;
 };
 
 export default transformOCRToNumber;

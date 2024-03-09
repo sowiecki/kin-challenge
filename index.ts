@@ -33,4 +33,34 @@ if (process.env.npm_config_verbose_mocks) {
 }
 console.log(reportScannedPolicyNumbers(parseOCRFile(mockFile)));
 
+console.log('__________User Story 3 (continued)__________');
+
+const mockFileWithErrors = [
+' _  _  _  _  _  _  _  _    ',
+'|_||_| _||_  _|| || |  ||_ ',
+'  ||_| _||_||_ |_||_|  ||_|',
+'                           ',
+' _     _  _  _        _  _ ',
+'|_ |_| _|  |  ||_|  ||_ |_ ',
+' _|  | _||_|  |  |  | _||_|',
+'                           ',
+'       _     _  _  _  _  _ ',
+'  ||_||_ |_|| ||_ |_  _||_ ',
+'  |  ||_|  || ||_| _||_  _|',
+'                           ',
+' _  _  _     _  _  _  _    ',
+'|_ |_   |  | _||_||_| _|   ',
+' _| _|  |  ||_ |_||_  _|   ',
+'                           ',
+' _  _  _     _             ',
+'  || ||_||_   ||_ |_||_||_|',
+'  ||_||_| _|  ||_|  |  |  |',
+'                            '
+].join('\n');
+
+if (process.env.npm_config_verbose_mocks) {
+  console.log(mockFileWithErrors);
+}
+console.log(reportScannedPolicyNumbers(parseOCRFile(mockFileWithErrors)));
+
 export default parseOCRFile;

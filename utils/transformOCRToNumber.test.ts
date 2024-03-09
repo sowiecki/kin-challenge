@@ -20,9 +20,9 @@ describe('Utilities', () => {
         '|_|  |  ||_| _|  |  ||_|  |'
       ];
 
-      expect(transformOCRToNumber(mockOCR1)).toEqual(610207276);
-      expect(transformOCRToNumber(mockOCR2)).toEqual(422327824);
-      expect(transformOCRToNumber(mockOCR3)).toEqual(871857461);
+      expect(transformOCRToNumber(mockOCR1)).toEqual('610207276');
+      expect(transformOCRToNumber(mockOCR2)).toEqual('422327824');
+      expect(transformOCRToNumber(mockOCR3)).toEqual('871857461');
     });
   });
 });

@@ -18,7 +18,7 @@ describe('Utilities', () => {
         '|_|  |  ||_| _|  |  ||_|  |'
       ].join('\n');
 
-      expect(parseOCRFile(mockScannedFile)).toEqual([610207276, 422327824, 871857461]);
+      expect(parseOCRFile(mockScannedFile)).toEqual(['610207276', '422327824', '871857461']);
     });
   });
 });
