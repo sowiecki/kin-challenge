@@ -4,7 +4,7 @@
 # Getting Started
 
 ```bash
-git clone ...
+git clone git@github.com:sowiecki/kin-challenge.git
 cd ./kin-challenge
 npm install
 npm start
