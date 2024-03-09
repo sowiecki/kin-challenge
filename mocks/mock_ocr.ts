@@ -1,4 +1,4 @@
-import { SCANNED_NUMBERS_MAP } from './constants';
+import { SCANNED_NUMBERS_MAP } from '../constants';
 
 /**
  * Utilities for mocking OCR'ed policy lines, entries, and files

@@ -12,6 +12,7 @@ interface ScannedNumber {
 }
 
 export const CHARS_PER_OCR_LINE = 27;
+export const CHARS_PER_POLICY = 9;
 
 // Manually deconstructed scanned numbers, to avoid issues with whitespacing and new lines
 export const SCANNED_NUMBERS_MAP: ScannedNumber = {

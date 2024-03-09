@@ -1,4 +1,4 @@
-import { SCANNED_NUMBERS_MAP } from './constants';
+import { SCANNED_NUMBERS_MAP } from '../constants';
 
 /**
  * Takes a single segmented digit of 3 lines and outputs its matching number

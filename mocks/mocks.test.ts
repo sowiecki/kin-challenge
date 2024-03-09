@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import { combineDigits, transformNumberToOCR } from './mock_ocr';
-import { SCANNED_NUMBERS_MAP, CHARS_PER_OCR_LINE } from './constants';
+import { SCANNED_NUMBERS_MAP, CHARS_PER_OCR_LINE } from '../constants';
 
 describe('Mock utilities', () => {
   describe('combineDigits', () => {
