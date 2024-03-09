@@ -15,7 +15,7 @@ const mapDigit = (entryLines: string[]) => (_: string, index: number) => {
   ];
   const stringifiedParsedSegments = JSON.stringify(parsedSegments);
   const foundIndex = Object.values(SCANNED_NUMBERS_MAP).findIndex((array: string[]) => JSON.stringify(array) === stringifiedParsedSegments);
-console.log(foundIndex)
+
   return foundIndex === -1 ? '?' : foundIndex;
 };
 

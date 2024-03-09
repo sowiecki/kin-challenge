@@ -21,7 +21,7 @@ console.log(transformOCRToNumber(mockOCRPolicyNumber));
 console.log('__________User Story 2__________');
 
 console.log(`↓ Checksum validation on ${transformOCRToNumber(mockOCRPolicyNumber)} ↓`);
-console.log(checksum(transformOCRToNumber(mockOCRPolicyNumber)));
+console.log(checksum(parseInt(transformOCRToNumber(mockOCRPolicyNumber), 10)));
 
 console.log('__________User Story 3__________');
 
