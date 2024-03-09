@@ -21,7 +21,7 @@ describe('Mock utilities', () => {
         ' _  _  _  _  _     _  _     _ ',
         '|_||_|  ||_ |_ |_| _| _|  || |',
         ' _||_|  ||_| _|  | _||_   ||_|'
-      ].join('\n');
+      ];
 
       expect(combinedDigits).toEqual(expectedResult);
     });
@@ -61,9 +61,9 @@ describe('Mock utilities', () => {
         expect(line.length).toEqual(CHARS_PER_OCR_LINE);
       });
 
-      expect(transformNumberToOCR(mockPolicyNumber1)).toEqual(expectedResult1.join('\n'));
-      expect(transformNumberToOCR(mockPolicyNumber2)).toEqual(expectedResult2.join('\n'));
-      expect(transformNumberToOCR(mockPolicyNumber3)).toEqual(expectedResult3.join('\n'));
+      expect(transformNumberToOCR(mockPolicyNumber1)).toEqual(expectedResult1);
+      expect(transformNumberToOCR(mockPolicyNumber2)).toEqual(expectedResult2);
+      expect(transformNumberToOCR(mockPolicyNumber3)).toEqual(expectedResult3);
     });
   });
 });

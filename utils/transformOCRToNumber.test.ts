@@ -8,17 +8,17 @@ describe('Utilities', () => {
         ' _     _  _  _  _  _  _  _ ',
         '|_   || | _|| |  | _|  ||_ ',
         '|_|  ||_||_ |_|  ||_   ||_|'
-      ].join('\n');
+      ];
       const mockOCR2 = [
         '    _  _  _  _  _  _  _    ',
         '|_| _| _| _| _|  ||_| _||_|',
         '  ||_ |_  _||_   ||_||_   |'
-      ].join('\n');
+      ];
       const mockOCR3 = [
         ' _  _     _  _  _     _    ',
         '|_|  |  ||_||_   ||_||_   |',
         '|_|  |  ||_| _|  |  ||_|  |'
-      ].join('\n');
+      ];
 
       expect(transformOCRToNumber(mockOCR1)).toEqual(610207276);
       expect(transformOCRToNumber(mockOCR2)).toEqual(422327824);

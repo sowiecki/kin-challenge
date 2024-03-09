@@ -11,8 +11,7 @@ export const combineDigits = (...digits: any) => digits
     `${acc[0]}${currentVal[0]}`,
     `${acc[1]}${currentVal[1]}`,
     `${acc[2]}${currentVal[2]}`,
-  ]))
-  .join('\n');
+  ]));
 
 export const transformNumberToOCR = (entry: number) => combineDigits(
   ...`${entry}`

@@ -19,12 +19,11 @@ const mapDigit = (entryLines: string[]) => (_: string, index: number) => {
 };
 
 
-const transformOCRToNumber = (entry: string) => {
-  const entryLines = entry.split('\n');
+const transformOCRToNumber = (entry: string[]) => {
+  const entryLines = entry;
+  const digits = new Array(9).fill(null).map(mapDigit(entryLines)).join('');
 
-  const digits = new Array(9).fill(null).map(mapDigit(entryLines));
-
-  return parseInt(digits.join(''), 10);
+  return parseInt(digits, 10);
 };
 
 export default transformOCRToNumber;

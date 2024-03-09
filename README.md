@@ -18,3 +18,7 @@ npm run test
 # Notes
 - I highly recommend enabling rendering of whitespaces (in VSCode, `ctrl` + `,` to open Settings, select `all` under "Render Whitespace")
 - This project is organized similar to a backend API, without the backend API. In other words, the functions are written as individual utility methods, similar to how I'd implement them into a larger backend service.
+
+
+# TODO
+- Add linting
